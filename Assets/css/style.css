@@ -1,0 +1,32 @@
+.primary-color {
+    color: #d35649;
+}
+
+.primary-gray {
+    color:  #98a5a5;
+}
+
+.primary-blue {
+    color:  #509bd7;
+}
+
+.gray-footer {
+    color: #1f1f1f;
+}
+
+.gray-footer-btn {
+    color: #444;
+}
+
+.primary-purp {
+    color: #575a89;
+}
+
+.light-gray {
+    color: #eee;
+}
+
+.bg-primary-color {
+    background-color: #d35649;
+}
+
