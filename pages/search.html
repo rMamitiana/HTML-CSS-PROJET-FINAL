@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/Assets/css/style.css">
-    <title>Accueil</title>
+    <title>Search</title>
 </head>
 <body style="box-sizing: border-box; overflow-x: hidden;">
     <header>
@@ -15,17 +15,17 @@
             <div class="d-flex justify-content-between">
                 <div class="px-3">
                     <img src="/Assets/Images/group-2.svg" alt="group-2" class="py-3" style="max-width: 60px;">
-                    <a href="index.html" class="fs-5 fw-light text-decoration-none text-white">[Events]</a>
+                    <a href="../index.html" class="fs-5 fw-light text-decoration-none text-white">[Events]</a>
                 </div>
                 <ul class="nav justify-content-end">
                     <li class="nav-item d-flex justify-content-center align-items-center px-4">
-                        <a class="text-decoration-none text-white" href="/pages/search.html">
+                        <a class="text-decoration-none text-white" href="search.html">
                             <i class="fa fa-search pe-2" aria-hidden="true"></i>
                             Search
                         </a>
                     </li>
                     <li class="nav-item d-flex justify-content-center align-items-center px-4">
-                        <a class="text-decoration-none text-white" href="/pages/about.html">
+                        <a class="text-decoration-none text-white" href="about.html">
                             <i class="fa-regular fa-user pe-2"></i>
                             About
                         </a>
@@ -47,72 +47,74 @@
         </nav>
     </header>
 
-    <section id="jumbotron">
-        <div class="p-5 pt-3 mb-4 rounded-3" style="background-image: url('/Assets/Images/group-1.jpg');background-repeat: no-repeat; background-size: 100% auto; background-position-x: center; background-position-y: center;">
-            <div class="container-fluid d-flex flex-column justify-content-center align-items-center py-5">
-                <h1 class="display-5 fs-4 fw-bold text-uppercase text-white pb-2" style="text-shadow: 1px 1px 2px #1f1f1f;">[Events]...Your gateway to connect with events around your area</h1>
-                <form class="container" style="max-width: 700px; background-color: rgba(245, 245, 245, 0.65);">
-                    <p class="text-uppercase text-center pt-3">search event nearby</p>
-                    <div class="row pb-4">    
-                        <div class="col-xs-8 col-xs-offset-2">
-                            <div class="input-group">
-                                <input type="text" class="form-control" name="location" placeholder="Inter your location here">
-                                <div class="input-group-btn search-panel">
-                                    <button type="button" class="btn bg-primary-color text-white">
-                                        Search
-                                    </button>
-                                </div>        
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <button class="btn mt-4 fw-bold" style="background-color: rgba(245, 245, 245, 0.65);" type="button">How it works</button>
-            </div>
+    <div id="search">
+        <div id="event-search" class="bg-primary-gray py-4 mt-4">
+            <h3 class="primary-gray text-center py-3">Filter by location, host, subject, date, daytime:</h3>
+            <form class="d-flex align-items-center justify-content-center flex-wrap p-n2">
+                <div class="form-group p-2">
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control" id="location">
+                </div>
+                <div class="form-group p-2">
+                    <label for="host">Host</label>
+                    <input type="text" class="form-control" id="host">
+                </div>
+                <div class="form-group p-2">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" id="subject">
+                </div>
+                <div class="form-group p-2">
+                    <label for="initial-date">Initial Date</label>
+                    <input type="date" class="form-control" id="initial-date">
+                </div>
+                <div class="form-group p-2">
+                    <label for="final-date">Final Date</label>
+                    <input type="date" class="form-control" id="final-date">
+                </div>
+                <div class="form-group p-2">
+                    <label for="final-date">Daytime</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose...</option>
+                        <option value="1">Day</option>
+                        <option value="2">Night</option>
+                      </select>
+                </div>
+                <div class="p-2">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                    <button type="submit" class="btn btn-warning text-white">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        Clear form
+                    </button>
+                </div>
+            </form>
         </div>
-    </section>
-    
-    <section id="steps">
-        <h4 class="primary-color text-center pb-4">[Event] works in four simple steps.</h4>
-        <ul class="row list-unstyled m-3">
-            <li class="col col-md-6 text-center">
-                <h6 class="fw-bold">
-                    <i class="fa-solid fa-magnifying-glass-location"></i> <br/>
-                    1-Locate:
-                </h6>
-                <p class="py-3">
-                    It's simple, on [Events] homepage, enter the name of the location you want to spend some good quality time with people and click on search.
-                </p>
-            </li>
-            <li class="col col-md-6 text-center">
-                <h6 class="fw-bold">
-                    <i class="fa-solid fa-check-double"></i><br/>
-                    2-Confirm or Create:
-                </h6>
-                <p class="py-3">
-                    Go to check the events nearby the location you searched for and
-                    apply for any [Events] available. Every [gathering] has a subject, that you can search for too! If no [Events] are available on the location you selected, you can create and share your event.
-                </p>
-            </li>
-            <li class="col col-md-6 text-center">
-                <h6 class="fw-bold">
-                    <i class="fa-solid fa-map-location-dot"></i><br/>
-                    3-Go!:
-                </h6>
-                <p class="py-3">
-                    Select the [Events], wait for the scheduled day and go! Be prepared to meet new people, create new connections and have a great time!
-                </p>
-            </li>
-            <li class="col col-md-6 text-center">
-                <h6 class="fw-bold">
-                    <i class="fa-solid fa-users"></i><br/>
-                    4-Have a good time:
-                </h6>
-                <p class="py-3">
-                    Once you are at the [Events] location, look for the host, enjoy and have fun!
-                </p>
-            </li>
-        </ul>
-    </section>
+        <div id="event-result" class="mb-4">
+            <p class="primary-gray text-center fs-4 fw-light pt-4">Search Result Found 7[Events] Nearby.</p>
+            <ul class="nav justify-content-center flex-wrap p-n2">
+                <li class="nav-item p-2">
+                    <a href="about.html" class="card bg-primary-color text-decoration-none rounded-0 border-0" style="width: 16rem; height: 12rem; background-image: url('../Assets/Images/group-2.svg'); background-repeat: no-repeat; background-size: 100% 94%; background-position-y: center;">
+                        <div class="card-body">
+                            <p class="card-text text-center light-gray">go to [gathering] example</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="about.html" class="card bg-primary-color text-decoration-none rounded-0 border-0" style="width: 16rem; height: 12rem; background-image: url('../Assets/Images/group-2.svg'); background-repeat: no-repeat; background-size: 100% 94%; background-position-y: center;">
+                        <div class="card-body">
+                            <p class="card-text text-center light-gray">go to [gathering] example</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="about.html" class="card bg-primary-color text-decoration-none rounded-0 border-0" style="width: 16rem; height: 12rem; background-image: url('../Assets/Images/group-2.svg'); background-repeat: no-repeat; background-size: 100% 94%; background-position-y: center;">
+                        <div class="card-body">
+                            <p class="card-text text-center light-gray">go to [gathering] example</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <footer class="bg-gray-footer light-gray py-2">
         <div class="d-flex justify-content-center align-items-center text-uppercase py-4">

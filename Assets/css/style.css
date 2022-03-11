@@ -9,8 +9,15 @@
 .primary-blue {
     color:  #509bd7;
 }
-
 .gray-footer {
+    color: #1f1f1f;
+}
+
+.bg-primary-gray {
+    background-color:  #f5f5f5;
+}
+
+.bg-gray-footer {
     background-color: #1f1f1f;
 }
 
@@ -30,3 +37,6 @@
     background-color: #d35649;
 }
 
+#map {
+    background-color: #ffff;
+}
