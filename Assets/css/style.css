@@ -6,6 +6,10 @@
     color:  #98a5a5;
 }
 
+.bg-gray {
+    background-color:  #98a5a5;
+}
+
 .primary-blue {
     color:  #509bd7;
 }
@@ -39,4 +43,8 @@
 
 #map {
     background-color: #ffff;
+}
+
+.bg-primary-blue {
+    background-color:  #509bd7;
 }
