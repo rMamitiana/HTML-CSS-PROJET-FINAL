@@ -50,17 +50,19 @@
     </header>
 
     <section id="jumbotron">
-        <div class="p-5 pt-3 mb-4 rounded-3" style="background-image: url('/Assets/Images/group-1.jpg');background-repeat: no-repeat; background-size: 100% auto; background-position-x: center; background-position-y: center;">
-            <div class="container-fluid d-flex flex-column justify-content-center align-items-center py-5">
-                <h1 class="display-5 fs-4 fw-bold text-uppercase text-white pb-2" style="text-shadow: 1px 1px 2px #1f1f1f;">[Events]...Your gateway to connect with events around your area</h1>
+        <div class="p-5 pb-0 pb-md-5 mb-4 rounded-3" style="background-image: url('/Assets/Images/group-1.jpg');background-repeat: no-repeat; background-position: center; background-size: cover;">
+            <div class="container-fluid d-flex flex-column justify-content-end justify-content-md-center align-items-center">
+                <h1 class="display-5 fs-4 fw-bold text-uppercase text-white text-center pb-2" style="text-shadow: 1px 1px 2px #1f1f1f;">
+                    [Events]...Your gateway to connect with events around your area
+                </h1>
                 <form class="container" style="max-width: 700px; background-color: rgba(245, 245, 245, 0.65);">
                     <p class="text-uppercase text-center pt-3">search event nearby</p>
                     <div class="row pb-4">    
                         <div class="col-xs-8 col-xs-offset-2">
-                            <div class="input-group">
-                                <input type="text" class="form-control" name="location" placeholder="Inter your location here">
+                            <div class="input-group flex-nowrap flex-column flex-sm-row">
+                                <input type="text" class="form-control w-100" name="location" placeholder="Inter your location here">
                                 <div class="input-group-btn search-panel">
-                                    <button type="button" class="btn bg-primary-color text-white">
+                                    <button type="button" class="btn bg-primary-color text-white w-100">
                                         Search
                                     </button>
                                 </div>        
