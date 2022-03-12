@@ -12,34 +12,36 @@
 <body style="box-sizing: border-box; overflow-x: hidden;">
     <header>
         <nav class="bg-primary-color">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex flex-column align-items-center flex-md-row justify-content-md-between">
                 <div class="px-3">
-                    <img src="/Assets/Images/group-2.svg" alt="group-2" class="py-3" style="max-width: 60px;">
-                    <a href="index.html" class="fs-5 fw-light text-decoration-none text-white">[Events]</a>
+                    <a href="index.html" class="text-decoration-none text-white">
+                        <img src="/Assets/Images/group-2.svg" alt="group-2" class="py-3" style="max-width: 60px;">
+                        <span class="fs-5 fw-light" style="text-shadow: 1px 1px 2px #1f1f1f;">[Events]</span>
+                    </a>
                 </div>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item d-flex justify-content-center align-items-center px-4">
+                <ul class="nav flex-nowrap justify-content-md-end">
+                    <li class="nav-item d-flex justify-content-center align-items-center py-2 py-md-0 px-4">
                         <a class="text-decoration-none text-white" href="/pages/search.html">
                             <i class="fa fa-search pe-2" aria-hidden="true"></i>
-                            Search
+                            <span class="d-none d-md-inline">Search</span>
                         </a>
                     </li>
-                    <li class="nav-item d-flex justify-content-center align-items-center px-4">
+                    <li class="nav-item d-flex justify-content-center align-items-center py-2 py-md-0 px-4">
                         <a class="text-decoration-none text-white" href="/pages/about.html">
                             <i class="fa-regular fa-user pe-2"></i>
-                            About
+                            <span class="d-none d-md-inline">About</span>
                         </a>
                     </li>
-                    <li class="nav-item d-flex justify-content-center align-items-center px-4">
+                    <li class="nav-item d-flex justify-content-center align-items-center py-2 py-md-0 px-4">
                         <a class="text-decoration-none text-white" href="#">
                             <i class="fa fa-rss pe-2" aria-hidden="true"></i>
-                            Blog
+                            <span class="d-none d-md-inline">Blog</span>
                         </a>
                     </li>
-                    <li class="nav-item d-flex justify-content-center align-items-center px-4">
+                    <li class="nav-item d-flex justify-content-center align-items-center py-2 py-md-0 px-4">
                         <a class="text-decoration-none text-white" href="#">
                             <i class="fa fa-bars pe-2" aria-hidden="true"></i>
-                            More
+                            <span class="d-none d-md-inline">More</span>
                         </a>
                     </li>
                 </ul>
@@ -150,66 +152,68 @@
         </div>
     </section>
 
-    <footer class="light-gray pt-2" style="background-color: rgb(0, 0, 0);">
-        <div class="d-flex justify-content-center align-items-center text-uppercase py-4">
-            <ul class="nav border-top border-bottom">
-                <li class="nav-item">
-                    <a class="nav-link fs-6 light-gray" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 light-gray" href="#">Search</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 light-gray" href="#">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 light-gray" href="#">Advertise</a>
-                </li>
-            </ul>
-            <div class="rounded-circle border border-2 d-flex justify-content-center align-items-center" style="width: 5em; height: 5em;">
-                <i class="fa-solid fa-location-dot fa-2x d-block"></i>
+    <footer class="light-gray pt-lg-2" style="background-color: rgb(0, 0, 0);">
+        <div class="d-none d-lg-block">
+            <div class="d-flex justify-content-center align-items-center text-uppercase py-4">
+                <ul class="nav border-top border-bottom">
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 light-gray" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 light-gray" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 light-gray" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 light-gray" href="#">Advertise</a>
+                    </li>
+                </ul>
+                <div class="rounded-circle border border-2 d-flex justify-content-center align-items-center" style="width: 5em; height: 5em;">
+                    <i class="fa-solid fa-location-dot fa-2x d-block"></i>
+                </div>
+                <ul class="nav border-top border-bottom">
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 light-gray" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 light-gray" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 light-gray" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 light-gray" href="#">Advertise</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav border-top border-bottom">
-                <li class="nav-item">
-                    <a class="nav-link fs-6 light-gray" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 light-gray" href="#">Search</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 light-gray" href="#">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 light-gray" href="#">Advertise</a>
-                </li>
-            </ul>
-        </div>
-        <div class="row p-3">
-            <div class="col-4 text-center">
-                <h5>Subscribe</h5>
-                <form class="row justify-content-center">
-                    <div class="col-7 p-0">
-                        <label for="inputemail" class="visually-hidden">Email</label>
-                        <input type="email" class="form-control bg-transparent" style="border: 1px solid #444" id="inputemail" placeholder="Insert your e-mail here">
-                    </div>
-                    <div class="col-3 p-0">
-                        <button type="submit" class="btn bg-gray-footer-btn light-gray w-100 m-0">Send</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-4 text-center">
-                <h5>Contact</h5>
-                <p>
-                    Have a question or suggestion?
-                </p>
-                <a href="#" class="d-block primary-color text-decoration-none">contact@events.com</a>
-            </div>
-            <div class="col-4 text-center">
-                <h5>About</h5>
-                <p>
-                    [Event] is online plateform that works to improve and increase social life connections, when this nightmare that we are currently living in is over
-                    <a href="#" class="primary-color text-decoration-none">learn more.</a>
-                </p>
+            <div class="row p-3">
+                <div class="col-4 text-center">
+                    <h5>Subscribe</h5>
+                    <form class="row justify-content-center">
+                        <div class="col-7 p-0">
+                            <label for="inputemail" class="visually-hidden">Email</label>
+                            <input type="email" class="form-control bg-transparent" style="border: 1px solid #444" id="inputemail" placeholder="Insert your e-mail here">
+                        </div>
+                        <div class="col-3 p-0">
+                            <button type="submit" class="btn bg-gray-footer-btn light-gray w-100 m-0">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-4 text-center">
+                    <h5>Contact</h5>
+                    <p>
+                        Have a question or suggestion?
+                    </p>
+                    <a href="#" class="d-block primary-color text-decoration-none">contact@events.com</a>
+                </div>
+                <div class="col-4 text-center">
+                    <h5>About</h5>
+                    <p>
+                        [Event] is online plateform that works to improve and increase social life connections, when this nightmare that we are currently living in is over
+                        <a href="#" class="primary-color text-decoration-none">learn more.</a>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="footer-btn">
